@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Thêm Node</h2>
+<div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="id" [(ngModel)] ="id">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Content"  [(ngModel)] ="content"></textarea>
+    </mat-form-field>
+  </div>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Đóng</button>
+  <button mat-button (click)="onNoClick();" cdkFocusInitial>Thêm</button>
+</mat-dialog-actions>
